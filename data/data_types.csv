@@ -58,6 +58,5 @@ FA_Mono_g,float64
 FA_Poly_g,float64
 Cholestrl_mg,float64
 GmWt_1,float64
-GmWt_Desc1,object
 GmWt_2,float64
-GmWt_Desc2,object
+Characteristic_0,object
