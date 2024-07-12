@@ -51,9 +51,9 @@ DROP COLUMN `Characteristic_2`;
 SELECT * FROM nutrition_new;
 
 CREATE TABLE IF NOT EXISTS weight_desc (
-    Produce VARCHAR(255),
-    Characteristic_0 VARCHAR(255),
-    Characteristic_1 VARCHAR(255),
+    Produce TEXT,
+    Characteristic_0 TEXT,
+    Characteristic_1 TEXT,
     GmWt_1 FLOAT,
     GmWt_Desc1 VARCHAR(255),
     GmWt_2 FLOAT,
@@ -66,6 +66,10 @@ ALTER TABLE `Nutrients`.`weight_desc`
 DROP COLUMN `Characteristic_0`,
 DROP COLUMN `Characteristic_1`;
 
+SELECT * FROM weight_desc;
+DESCRIBE weight_desc;
+ALTER TABLE weight_desc
+MODIFY COLUMN Produce Text;
 SET SESSION group_concat_max_len = 10000;
 CREATE TABLE serving_size AS (
 SELECT 
@@ -81,3 +85,8 @@ GROUP BY
 );
 
 SELECT * FROM serving_size;
+
+DESCRIBE serving_size;
+
+ALTER TABLE serving_size
+MODIFY COLUMN Produce Text;
