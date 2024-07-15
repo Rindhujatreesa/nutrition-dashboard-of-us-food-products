@@ -33,7 +33,7 @@ Ever wondered about that hangover after a heavy meal? Does your favorite meal su
       For this, `GROUP_CONCAT(DISTINCT GmWt_1 ORDER BY GmWt_1 SEPARATOR ' / ') AS GmWt_1` function was used thus giving the details of all serving sizes without absurd aggregations
     - Multiple Tables creation by aggregation: With the `Produce` field to group the food items, the nutrients were averaged for each group. This reduced the redundacy in the dataset and grouped identical food produces together for easy finding
 
-## Dashboard
+## [Dashboard](https://public.tableau.com/views/nutrition_chart/chart?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 With the clean dataset, the following dashboard was created on Tableau combining multiple tables and using Produce as the filter on all of the tables.
 
